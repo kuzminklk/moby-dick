@@ -1,0 +1,119 @@
+
+// General colors
+
+$dominant-color: #ffffff
+$sub-dominant-color: #cecece
+$counter-dominant-color: #000000
+$sub-counter-dominant-color: #333
+
+nav
+	border: 2px solid $sub-dominant-color
+
+// General fonts
+
+$sub-font: 'PitchWeb', Courier, monospace
+
+@font-face
+	font-family: "Amstelvar VF"
+	src: url("https://mdn.github.io/shared-assets/fonts/variable-fonts/AmstelvarAlpha-VF.woff2") format("woff2-variations")
+	font-weight: 300 900
+	font-stretch: 75% 150%
+	font-style: normal
+	font-display: swap
+
+// General layout
+
+*
+	box-sizing: border-box
+
+body
+	margin: 0
+	padding: 0
+
+main
+	min-height: 100vh
+	max-width: 74vw
+	padding: 4rem 0
+	margin: 0 auto
+
+nav
+	min-height: 25vh
+	display: flex
+	justify-content: center
+	// align-content: center
+	align-items: center
+
+	h3
+		flex: auto
+		display: flex
+		justify-content: space-evenly
+		// align-content: center
+		align-items: center
+
+footer
+	min-height: 25vh
+	display: flex
+	justify-content: center
+	// align-content: center
+	align-items: center
+	gap: 3rem
+
+// General typography
+
+html
+	font-family: "Amstelvar VF", Georgia, serif
+	font-size: calc(14px + 1.3vw)
+	scroll-behavior: smooth
+
+footer
+	font-size: 0.75rem
+	color: $sub-counter-dominant-color
+	font-family: $sub-font
+
+h1
+	text-align: center
+	font-size: 5rem
+	font-stretch: 75%
+	font-weight: 450
+	margin: 4rem 0
+
+h2
+	text-align: center
+	font-size: 2.5rem
+	font-stretch: 80%
+	font-weight: 550
+	margin: 3rem 0
+
+h3
+	text-align: center
+
+p
+	text-indent: 2rem
+	margin: 1.5rem 0
+	line-height: 1.4
+
+a
+	color: $counter-dominant-color
+	text-decoration: underline
+
+a:hover
+	text-decoration: none
+
+// p::first-letter
+// 	font-size: 1.2rem
+// 	font-stretch: 85%
+//  	font-weight: 550
+
+p::first-line
+	font-size: 1.125rem
+	font-stretch: 90%
+	font-weight: 550
+
+// Selections
+
+::selection
+	background-color: $counter-dominant-color
+	color: $dominant-color
+
+h1::selection, h2::selection
+	text-decoration: underline

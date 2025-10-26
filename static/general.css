@@ -80,13 +80,12 @@ main {
 nav {
   min-height: 25vh;
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
 }
 nav h3 {
-  flex: auto;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
 }
 
@@ -178,12 +177,12 @@ h1::selection, h2::selection {
   }
   nav {
     min-height: 27.5vh;
+    flex-direction: column;
+    padding: 1rem;
   }
   nav h3 {
-    flex-direction: column;
-  }
-  nav h3 a {
-    margin: 1.25rem;
+    flex: auto;
+    line-height: 125%;
   }
   footer {
     min-height: 17.5vh;

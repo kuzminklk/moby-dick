@@ -20,10 +20,11 @@ body {
 }
 
 main {
-  min-height: 100vh;
+  min-height: 50vh;
   max-width: 74vw;
   padding: 4rem 0;
   margin: 0 auto;
+  transition: max-width 0.1s ease;
 }
 
 nav {
@@ -49,7 +50,7 @@ footer {
 
 html {
   font-family: "Amstelvar VF", Georgia, serif;
-  font-size: calc(14px + 1.3vw);
+  font-size: calc(23px + 0.6vw);
   scroll-behavior: smooth;
 }
 
@@ -116,4 +117,17 @@ h1::-moz-selection, h2::-moz-selection {
 
 h1::selection, h2::selection {
   text-decoration: underline;
-}/*# sourceMappingURL=style.css.map */
+}
+
+@media screen and (max-width: 768px) {
+  main {
+    max-width: 88vw;
+  }
+  nav {
+    min-height: 27.5vh;
+  }
+  nav h3 {
+    flex-direction: column;
+    gap: 1.5em;
+  }
+}/*# sourceMappingURL=general.css.map */

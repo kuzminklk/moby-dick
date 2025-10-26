@@ -1,4 +1,6 @@
 
+	
+	
 // General colors
 
 $dominant-color: #ffffff
@@ -8,6 +10,8 @@ $sub-counter-dominant-color: #333
 
 nav
 	border: 2px solid $sub-dominant-color
+
+
 
 // General fonts
 
@@ -21,6 +25,8 @@ $sub-font: 'PitchWeb', Courier, monospace
 	font-style: normal
 	font-display: swap
 
+
+
 // General layout
 
 *
@@ -31,10 +37,11 @@ body
 	padding: 0
 
 main
-	min-height: 100vh
+	min-height: 50vh
 	max-width: 74vw
 	padding: 4rem 0
 	margin: 0 auto
+	transition: max-width 0.1s ease
 
 nav
 	min-height: 25vh
@@ -58,11 +65,13 @@ footer
 	align-items: center
 	gap: 3rem
 
+
+
 // General typography
 
 html
 	font-family: "Amstelvar VF", Georgia, serif
-	font-size: calc(14px + 1.3vw)
+	font-size: calc(23px + 0.6vw) // 1.3vw ~ 18px on my display
 	scroll-behavior: smooth
 
 footer
@@ -109,6 +118,8 @@ p::first-line
 	font-stretch: 90%
 	font-weight: 550
 
+
+	
 // Selections
 
 ::selection

@@ -8,4 +8,9 @@ Part of MDN study materials and as submodule in [detached repository](https://gi
 
 ### Technologies
 
-Python, Flask, SASS
+Development: Visual Studio Code  
+Programming languages: JavaScript, Python  
+Framework: Flask  
+Markup languages: HTML, CSS → SASS  
+Formatting: “.editorconfig”, “.vscode/…”, Prettier, Ruff  
+Version Control: Git, GitHub
